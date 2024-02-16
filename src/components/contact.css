@@ -1,0 +1,169 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_intro h2{
+  margin-right: 55px;
+}
+
+
+.contact_intro{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 80%;
+}
+
+
+.form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  padding: 30px 0 100px 0;
+}
+
+.form_container{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 25px ;
+  padding: 20px;
+  background-color:#001233;
+  border: #cac0b3 2px solid;
+}
+
+.name ,.objet ,.email, .tel, .message{
+  display: flex;
+  flex-direction: column;
+  width: 75%; 
+}
+
+.message input{
+  height: 150px;
+}
+#message{
+  margin: 10px 0;
+}
+
+.submit{
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 2px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.103);
+  color: #cac0b3;
+}
+
+label{
+  font-size: 22px;
+  display: flex;
+  justify-content:center ;
+  
+}
+
+input{
+  height: 20px;
+  border: solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.103);
+  color: #cac0b3; 
+   margin: 10px 0px;
+}
+
+textarea{
+  background-color: rgba(255, 255, 255, 0.103);
+  border: 2px solid #cac0b3;
+  color: #cac0b3;
+  height: 150px;
+  border-radius: 15px;
+  padding: 10px;
+}
+.success_message {
+  border-radius: 25px;
+  height: 40%;
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #cac0b3;
+  border-radius: 25px;
+  animation: wave 0.5s linear backwards;
+}
+
+.success_message p{
+  text-align: center;
+  width: 80%;
+}
+
+.return_button{
+  height: 50px;
+  position: relative;
+  right: 180px;
+}
+
+@keyframes wave {
+  from{
+    transform:scale(0%);
+  }
+  to {
+    transform: scale(100%);
+  }
+
+}
+
+.validate_icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  background-color: #ff595a;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+  .form_container{
+      width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .form_container{
+      width: 70%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .form_container{
+      width: 80%;
+  }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1023px){
+  body{
+  flex-direction: column;
+  height: 100%;
+  }
+  .form{
+    padding: 50px 0px;
+  }
+  .contact{
+  height: 100%;
+  }
+  .name ,.objet ,.email, .tel, .message{
+  width: 90%;
+  }
+  textarea{
+    height: 135px;
+  }
+}

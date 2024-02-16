@@ -1,0 +1,56 @@
+.parcours{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parcours_section{
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.parcours_section section{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.parcours h3{
+    color: #cac0b3;
+    text-align: center;
+    height: 50px;
+}
+.parcours a{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    color: #cac0b3;
+}
+.pdf_container img{
+    object-fit: contain;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 15px;
+}
+.certificat_image{
+    height: 430px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .parcours_section{
+        flex-direction: column;
+        height: 100%;
+    }
+    .parcours_section section{
+        width: 80%;
+    }
+    .rncp_pdf .pdf_container img{
+        height: 100%;
+        padding: 20px 0;
+    }
+}

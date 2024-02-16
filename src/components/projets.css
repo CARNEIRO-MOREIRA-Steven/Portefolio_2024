@@ -1,0 +1,46 @@
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+.projets_diferents{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.projets_formation ,.projets_personnels{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+}
+.site iframe{
+    width: 1440px; /* Largeur du site web (version PC) */
+  height: 1000px; /* Hauteur de l'iframe */
+  transform-origin: 0 0; /* Point d'origine de la transformation */
+  transform: scale(0.201);
+  background-color: white;
+  filter: brightness(50%);
+  border-radius: 100px;
+}
+.site a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+.site{
+    width: 300px; /* Largeur de la fenêtre */
+    height: 300px; /* Hauteur de la fenêtre */
+    overflow: hidden; /* Cacher tout contenu dépassant de la fenêtre */
+    padding: 5px;
+    z-index: 2;
+}
+.site h4{
+    color: #cac0b3;
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+.projets_diferents{
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+}
+}
