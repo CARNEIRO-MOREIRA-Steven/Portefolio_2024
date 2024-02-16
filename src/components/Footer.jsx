@@ -58,13 +58,13 @@ const Footer = () => {
           <img alt='logo mail' src='./images/envelope-solid.svg'></img> 
           <p>carneiromoreirasteven22@gmail.com</p>
         </a>
-        <a href='tel:carneiromoreirasteven22@gmail.com'>
+        <a href='tel:06.27.57.59.07'>
           <img alt='logo téléphone' src='./images/phone-solid.svg'></img> 
           <p>06.27.57.59.07</p>
         </a>
       </section>
       <section>
-        <p onClick={openModal}>Politique de confidentialité et de protection des données</p>
+        <p className='cursor_modal' onClick={openModal}>Politique de confidentialité et de protection des données</p>
         <p>© Copyright 2024 - Carneiro Moreira Steven</p>
       </section>
       {showModal && <Modal onClose={closeModal} />}

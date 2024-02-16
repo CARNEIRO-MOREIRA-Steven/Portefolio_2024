@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import NavBar from '@/components/NavBar'
 import Banner from '../components/Banner'
 import Skills from '../components/Skills'
 import Projets from '../components/Projets'
@@ -12,6 +13,7 @@ const page = () => {
     
     <div>
       <Header />
+      <NavBar />
       <Banner />
       <Skills />
       <Projets />

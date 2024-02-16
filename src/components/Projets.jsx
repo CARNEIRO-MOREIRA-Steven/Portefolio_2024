@@ -13,13 +13,13 @@ const Projets = () => {
           <aside className='site events'>
             <a href='https://77events-three.vercel.app/' target='_blank'>
             <h4>77events</h4>
-            <iframe title='77events' src='https://77events-three.vercel.app/' scrolling="no" width={600} height={400} defer></iframe>
+            <img alt='image site 77events' src='./images/77events.webp'></img>
             </a>
           </aside>
           <aside className='site argent_bank'>
           <a href='https://argent-bank-iota.vercel.app/' target='_blank'>
             <h4>Argent-Bank</h4>
-            <iframe title='Argent Bank' src='https://argent-bank-iota.vercel.app/' scrolling="no" width={600} height={400} defer></iframe>
+            <img alt='image site argent bank' src='./images/argent_bank.webp'></img>
             </a>
           </aside>
         </section>
@@ -28,7 +28,7 @@ const Projets = () => {
           <aside className='site codemeta'>
           <a href='https://www.codemeta-solutions.com/' target='_blank'>
             <h4>CodeMeta Solutions</h4>
-            <iframe title='CodeMeta Solutions' src='https://www.codemeta-solutions.com/' scrolling="no" width={600} height={400} defer></iframe>
+            <img alt='image site codemeta solutions' src='./images/codemeta.webp'></img>
             </a>
           </aside>
         </section>

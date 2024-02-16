@@ -35,10 +35,16 @@
   border-radius: 25px ;
   padding: 20px;
   background-color:#001233;
-  border: #cac0b3 2px solid;
 }
 
-.name ,.objet ,.email, .tel, .message{
+.form_group{
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  align-items: center;
+}
+
+.name, .firstname ,.objet ,.email, .tel, .message{
   display: flex;
   flex-direction: column;
   width: 75%; 
@@ -146,6 +152,11 @@ textarea{
   .form_container{
       width: 80%;
   }
+  .form_group{
+    flex-direction: column;
+    gap: 0;
+  
+  }
 }
 
 
@@ -155,12 +166,15 @@ textarea{
   height: 100%;
   }
   .form{
-    padding: 50px 0px;
+    padding: 20px 0 40px 0;
   }
   .contact{
   height: 100%;
   }
-  .name ,.objet ,.email, .tel, .message{
+  .form_title{
+    margin-bottom: 0;
+  }
+  .name, .firstname ,.objet ,.email, .tel, .message{
   width: 90%;
   }
   textarea{

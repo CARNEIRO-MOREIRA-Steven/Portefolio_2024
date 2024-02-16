@@ -79,14 +79,21 @@ const Contact = () => {
             </div>
           ) : (
     <section className='form_container'>
+      <div className='form_group'>
         <div className='name'>
             <label htmlFor='name'>Nom</label>
             <input autoComplete='name' id='name' value={formData.name} type='text' name='name' required onChange={handleChange}></input>
+        </div>
+        <div className='firstname'>
+            <label htmlFor='firstname'>Prénom</label>
+            <input autoComplete='firstname' id='firstname' value={formData.name} type='text' name='firstname' required onChange={handleChange}></input>
+        </div>
         </div>
         <div className='email'>
             <label htmlFor='email'>Email</label>
             <input autoComplete='email' id='email' value={formData.email} type='email' name='email' required onChange={handleChange}></input>
         </div>
+        <div className='form_group'>
         <div className='objet'>
             <label htmlFor='objet'>Objet</label>
             <input autoComplete='objet' id='objet' value={formData.subject} type='text' name='subject' required onChange={handleChange}></input>
@@ -94,6 +101,7 @@ const Contact = () => {
         <div className='tel'>
             <label htmlFor='tel'>Téléphone</label>
             <input autoComplete='tel' id='tel' value={formData.tel} type='text' name='tel' required onChange={handleChange}></input>
+        </div>
         </div>
         <div className='message'>
             <label htmlFor='message'>Message</label>
