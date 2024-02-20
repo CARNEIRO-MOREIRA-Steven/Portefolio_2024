@@ -66,7 +66,7 @@ const Skills = () => {
   }, [divControls, ul1Controls, ul2Controls, ul3Controls, skillsVisible, skillsRef]);
 
   return (
-    <section className='skills' ref={skillsRef}>
+    <section id='mes_skills' className='skills' ref={skillsRef}>
       <h2>Skills</h2>
       <motion.div className='skills_list'
         initial={{ y: -100, opacity: 0, scale: 0 }}
