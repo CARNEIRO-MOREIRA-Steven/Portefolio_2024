@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 
 export default async function contactAPI(req, res) {
   // Extraction des données de la requête HTTP POST
-  const { name, email, tel, subject, message } = req.body;
+  const { name, firstname, email, tel, subject, message } = req.body;
   const user = process.env.NODEMAILER_EMAIL;
 
   // Configuration du transporteur Nodemailer pour l'envoi d'emails
@@ -28,6 +28,7 @@ export default async function contactAPI(req, res) {
       html: `
       <p> Objet: ${subject} <p>
       <p> Nom: ${name} <p>
+      <p> Prénom ${firstname} <p>
       <p> tel: ${tel} <p>
       <p> email: ${email} <p>
       <p> Message: ${message} <p>
